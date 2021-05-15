@@ -1,0 +1,7 @@
+docker run --name it-academy-db -d \
+    -p 33069:3306 \
+    -p 8822:22 \
+    
+--restart unless-stopped \
+    --volume /path/to/project/:/var/www/html \
+    amoraresco/it-academy-project:latest \
